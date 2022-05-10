@@ -9,10 +9,8 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     
-    let stackView = UIStackView()
     let emojiView = UILabel()
     let titleLabel = UILabel()
-    
     
     let emoji: String
     let titleText: String
@@ -50,7 +48,7 @@ extension OnboardingViewController {
         // Label
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.textAlignment = .center
-        titleLabel.font = UIFont.preferredFont(forTextStyle: .title3)
+        titleLabel.font = UIFont.preferredFont(forTextStyle: .body)
         titleLabel.adjustsFontForContentSizeCategory = true
         titleLabel.numberOfLines = 0
         titleLabel.text = titleText
@@ -66,6 +64,8 @@ extension OnboardingViewController {
         
         titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         titleLabel.topAnchor.constraint(equalTo: emojiView.bottomAnchor, constant: spacing).isActive = true
+        titleLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: view.safeAreaLayoutGuide.leadingAnchor, multiplier: 1).isActive = true
+        view.trailingAnchor.constraint(equalToSystemSpacingAfter: titleLabel.trailingAnchor, multiplier: 1).isActive = true
         
     }
 }
