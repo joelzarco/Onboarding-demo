@@ -9,6 +9,8 @@ import UIKit
 
 class WelcomeViewController : UIViewController{
     
+    let titleLabel = UILabel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
@@ -17,7 +19,16 @@ class WelcomeViewController : UIViewController{
 }
 
 extension WelcomeViewController{
-    func style(){}
+    func style(){
+        view.addSubview(titleLabel)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.text = "Welcome"
+        titleLabel.textAlignment = .center
+        titleLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle)
+    }
     
-    func layout(){}
+    func layout(){
+        titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
 }
