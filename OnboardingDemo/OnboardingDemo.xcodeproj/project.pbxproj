@@ -12,6 +12,7 @@
 		969D79942829A90700E46E10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969D79932829A90700E46E10 /* Assets.xcassets */; };
 		969D79972829A90700E46E10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969D79952829A90700E46E10 /* LaunchScreen.storyboard */; };
 		969D799F2829BC1A00E46E10 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969D799E2829BC1A00E46E10 /* OnboardingViewController.swift */; };
+		96ECFA8B282AFE830004FB68 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ECFA8A282AFE830004FB68 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		969D79962829A90700E46E10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		969D79982829A90700E46E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		969D799E2829BC1A00E46E10 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		96ECFA8A282AFE830004FB68 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				969D798A2829A90400E46E10 /* AppDelegate.swift */,
 				969D798E2829A90400E46E10 /* ContainnerViewController.swift */,
+				96ECFA8A282AFE830004FB68 /* WelcomeViewController.swift */,
 				969D799E2829BC1A00E46E10 /* OnboardingViewController.swift */,
 				969D79932829A90700E46E10 /* Assets.xcassets */,
 				969D79952829A90700E46E10 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				969D798F2829A90400E46E10 /* ContainnerViewController.swift in Sources */,
+				96ECFA8B282AFE830004FB68 /* WelcomeViewController.swift in Sources */,
 				969D799F2829BC1A00E46E10 /* OnboardingViewController.swift in Sources */,
 				969D798B2829A90400E46E10 /* AppDelegate.swift in Sources */,
 			);

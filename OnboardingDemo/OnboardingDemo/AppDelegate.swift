@@ -19,9 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemPink
+        containnerViewController.delegate = self
         window?.rootViewController = containnerViewController
         return true
     }
+}
 
+extension AppDelegate : onboardingDelegate{
+    func didFinishOnboarding() {
+        print("Has finished onboarding")
+    }
 }
 
